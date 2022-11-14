@@ -1,0 +1,8 @@
+_output
+velero-plugin-annotations-prune
+.idea/
+*.iml
+.go
+
+_tiltbuild
+
