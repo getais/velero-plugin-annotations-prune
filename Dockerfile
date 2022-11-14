@@ -20,5 +20,4 @@ ENV HOME=/usr/local/app \
 WORKDIR /usr/local/app
 
 COPY velero-plugin-annotations-prune ./bin/
-CMD [ "vpaguard" ]
 ENTRYPOINT ["cp", "/usr/local/app/bin/velero-plugin-annotations-prune", "/target/."]
