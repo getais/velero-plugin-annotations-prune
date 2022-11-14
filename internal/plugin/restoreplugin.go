@@ -94,6 +94,8 @@ func (p *RestorePlugin) Execute(input *velero.RestoreItemActionExecuteInput) (*v
 		}
 	}
 
+	pod.Annotations = Annotations
+
 	// convert back and return the mapped result
 	res, err := runtime.DefaultUnstructuredConverter.ToUnstructured(pod)
 	if err != nil {
